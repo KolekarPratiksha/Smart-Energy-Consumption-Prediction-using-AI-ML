@@ -25,8 +25,7 @@ A sleek, smart electricity bill estimator built with **Flask**. Enter your city,
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/energy-bill-predictor.git
-cd energy-bill-predictor
+git clone https://github.com/KolekarPratiksha/Smart-Energy-Consumption-Prediction-using-AI-ML
 ````
 
 ### 2. Create a virtual environment
