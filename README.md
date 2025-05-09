@@ -2,9 +2,6 @@
 
 ---
 
-````markdown
-# ⚡ Energy Bill Predictor
-
 A sleek, smart electricity bill estimator built with **Flask**. Enter your city, month, and device usage — and instantly get a predicted electricity bill, energy-saving suggestions, and a usage graph — all inside a magical cosmic UI.
 
 ---
