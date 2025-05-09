@@ -116,7 +116,7 @@ pandas
 
 ## 👨‍💻 Author
 
-Made by [Pratiksha Kolekar](https://github.com/yourusername)
+Made by [Pratiksha Kolekar](https://github.com/KolekarPratiksha)
 
 Feel free to ⭐ the repo if you find it helpful!
 
