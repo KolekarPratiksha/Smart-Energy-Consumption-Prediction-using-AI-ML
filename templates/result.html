@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>Predicted Monthly Electricity Bill</h2>
+        <p><strong>City:</strong> {{ city }}</p>
+        <p><strong>Power Company:</strong> {{ company }}</p>
+        <p><strong>Estimated Bill:</strong> ₹{{ prediction | round(2) }}</p>
+
+        <img src="/static/chart.png" alt="Trend Plot" width="600">
+
+        <h3>Energy Saving Recommendations</h3>
+        <p>{{ recommendation }}</p>
+
+        <a href="/">Try Another</a>
+    </div>
+</body>
+</html>

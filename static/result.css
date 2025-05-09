@@ -1,0 +1,96 @@
+/* Reset and standardize basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with cosmic gradient */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #3A1C71, #D76D77); /* Dark purple-pink gradient */
+    margin: 0;
+    padding: 40px;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;  /* Allow scrolling if content exceeds viewport */
+}
+
+/* Container with sleek dark background and floating effect */
+.result-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px; /* Increased radius for a softer look */
+    max-width: 900px;  /* Increased max-width for more space */
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 12px 30px rgba(173, 216, 230, 0.4); /* Soft blue glow */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.result-container:hover {
+    transform: translateY(-5px) scale(1.02); /* Slight scale and float effect */
+    box-shadow: 0 16px 50px rgba(173, 216, 230, 0.6); /* Glowing effect on hover */
+}
+
+/* Title with soft purple glow */
+h2 {
+    color: #6C5CE7;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgba(173, 216, 230, 0.5); /* Subtle glow */
+}
+
+/* Subheading with cyan accent */
+h3 {
+    color: #00cec9;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+/* Paragraphs and text with a clean font style */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #D4A5A5;
+}
+
+/* Image with smooth shadow, rounded corners, and glowing border effect */
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(173, 216, 230, 0.3); /* Subtle blue shadow */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+img:hover {
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.6); /* Intense glow on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+
+/* Link styling with a neon effect */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #6C5CE7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, color 0.2s;
+}
+
+a:hover {
+    color: #4834d4;
+    transform: translateY(-2px); /* Hover effect with slight upward motion */
+}
+
+/* Smooth scrolling effect for the page */
+html {
+    scroll-behavior: smooth;
+}

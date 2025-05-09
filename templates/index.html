@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><title>Energy Usage Form</title></head>
+<body>
+<h2>Enter Your Appliance Usage</h2>
+<form method="post">
+    <label for="city">City:</label>
+    <select name="city">
+        {% for c in cities %}
+            <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+    </select><br><br>
+
+    <label for="month">Month:</label>
+    <label for="month">Month:</label>
+<select name="month" id="month" required>
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>
+<br><br>
+
+    <label>Fan Count:</label> <input type="number" name="fan"><br>
+    <label>Fan Hours Per Day:</label> <input type="number" name="fan_hours" step="0.1"><br><br>
+
+    <label>Fridge Count:</label> <input type="number" name="fridge"><br>
+    <label>Fridge Hours Per Day:</label> <input type="number" name="fridge_hours" step="0.1"><br><br>
+
+    <label>AC Count:</label> <input type="number" name="ac"><br>
+    <label>AC Hours Per Day:</label> <input type="number" name="ac_hours" step="0.1"><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+</body>
+</html>
